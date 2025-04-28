@@ -42,11 +42,11 @@ public class Demo01Application {
         return "Hello, " + name + "!";
     }
 
-    // // 1. Simple greeting endpoint
-    // @GetMapping("/greet")
-    // public String greet() {
-    //     return "Welcome to Spring Boot!";
-    // }
+    // 1. Simple greeting endpoint
+    @GetMapping("/greet")
+    public String greet() {
+        return "Welcome to Spring Boot!";
+    }
 
     // 2 & 3. Greeting with path variable and optional query parameter
     @GetMapping("/greet/{name}")
